@@ -4,11 +4,11 @@ Our website serves as a platform for rich discussions by different students who 
 Screenshots of the project:
 
 Home Page: 
-
+<br>
 ![image](https://github.com/shruti0105/College-Query/assets/86341677/aae49ebf-581e-4735-a37d-2d860cfad062)
-
+<br>
 ![image](https://github.com/shruti0105/College-Query/assets/86341677/8178e11f-1009-4595-9a16-5c7931827ba2)
-
+<br>
 ![image](https://github.com/shruti0105/College-Query/assets/86341677/c6edc890-65db-4d79-b7aa-7d2567703bfc)
 
 Question Page:
