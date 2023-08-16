@@ -4,6 +4,7 @@ Our website serves as a platform for rich discussions by different students who 
 Screenshots of the project:
 
 ### Home Page:
+
 <br>
 ![image](https://github.com/shruti0105/College-Query/assets/86341677/aae49ebf-581e-4735-a37d-2d860cfad062)
 <br>
