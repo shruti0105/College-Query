@@ -1,0 +1,8 @@
+.color {
+  background-color: #272b3b;
+}
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}

@@ -1,0 +1,47 @@
+{{>header}}
+<head>
+  <link rel="stylesheet" href="css/register.css">
+</head>
+
+<h2>REGISTER HERE </h2><br />
+<!-- <span class="dot"><span> <img class="uimg" src="user1.png" alt=""></span></span>     -->
+<img class="user" src="images/user1.png" alt="" />
+<div class="Registration">
+  <div class="error_msg">
+  <h6>{{error}}</h6>
+</div>
+  <form id="Registration" method="POST" action="/register">
+    <div class="user2">
+      Username
+      <input type="text" name="username" id="Uname" placeholder="Username" />
+    </div>
+    <div class="ema">
+      Email Id
+      <input type="email" name="email" id="Uname" placeholder="Email Id" />
+    </div>
+    <div class="passw">
+      Password
+      <input type="Password" name="password" id="Pass" placeholder="Password" />
+    </div>
+    <input type="checkbox" id="check" />
+    <span>Remember me</span>
+    <br /><br />
+    <input type="submit" id="log" value="Register"/>
+    </form>
+    {{!-- <br /><br /> --}}
+    <h5 class="social_heading">Use Social Login</h5>
+    <div class="icon">
+      <a href="https://www.gmail.com/"><div
+          class="imageholder1 image3"
+        ></div></a>
+      <a href="https://www.twitter.com/"><div
+          class="imageholder1 image4"
+        ></div></a>
+      <a href="https://www.facebook.com/"><div
+          class="imageholder1 image5"
+        ></div></a>
+
+    </div>
+  
+</div>
+{{>footer}}

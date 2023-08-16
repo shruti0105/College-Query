@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #15171e;
+
+  /* background-color: #15171e; */
+  /* background-color:#3cd638 ; */
+
+  font-family: "Arial";
+}
+
+.Registration {
+  width: 492px;
+  overflow: hidden;
+  margin: auto;
+  margin: 50 0 0 450px;
+  padding: 80px 100px 100px 100px;
+  /* background: #a3a2a1;   */
+  background: #272b3b;
+  color: white;
+  border-radius: 15px;
+  margin-top: 2%;
+  height: 570px;
+  margin-bottom: 4%;
+}
+
+.user {
+  /* padding: 20%; */
+  border-radius: 50%;
+  margin-left: 45%;
+  margin-top: -2%;
+  position: absolute;
+  width: 9%;
+}
+
+/* .dot {
+  margin-left: 46%;
+  margin-top: -6%;
+  height: 100px;
+  width: 100px;
+  background-color: rgb(60, 176, 221);
+  border-radius: 100%;
+  display: inline-block;
+  padding-top: 50px;
+  position: absolute;
+} */
+
+h2 {
+  text-align: center;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.user2,
+.ema,
+.passw {
+  color: white;
+  padding: 15px 0;
+}
+
+#Uname {
+  width: 300px;
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+  padding-left: 8px;
+}
+
+#Pass {
+  width: 300px;
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+  padding-left: 8px;
+}
+
+#log {
+  width: 300px;
+  height: 30px;
+  border: none;
+  border-radius: 17px;
+  padding-left: 7px;
+  color: white;
+  background-color: #3cd638;
+  cursor: pointer;
+  font-size: 100%;
+  font-weight: bold;
+}
+
+.image3 {
+  background: url("/images/Google.png");
+  background-size: cover;
+  cursor: pointer;
+}
+.image3:hover {
+  transform: scale(1.4);
+}
+.image4 {
+  background: url("/images/twiiter.png");
+  background-size: cover;
+  cursor: pointer;
+}
+.image4:hover {
+  transform: scale(1.4);
+}
+.image5 {
+  background: url("/images/facebook.png");
+  background-size: cover;
+  cursor: pointer;
+}
+.image5:hover {
+  transform: scale(1.4);
+}
+
+.icon {
+  margin-top: 0%;
+  margin-left: 23%;
+  display: flex;
+  flex-direction: row;
+}
+.imageholder1 {
+  height: 32px;
+  width: 32px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 2px;
+  border-radius: 17px;
+  /* background-color: black; */
+}
+
+#log:hover {
+  color: black;
+  background: #3cd638;
+  box-shadow: 0 0 50px #3cd638;
+  font-weight: bold;
+}
+
+span {
+  color: white;
+  font-size: 17px;
+}
+
+.social_heading {
+  text-align: center;
+  padding: 6% 0 0 0;
+}
+
+.error_msg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  padding-bottom: 0;
+  /* background-color: rgb(122, 197, 244); */
+}
+
+.error_msg h6 {
+  opacity: 100%;
+  color: red;
+}

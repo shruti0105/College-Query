@@ -1,0 +1,56 @@
+{{>header}}
+<head>
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<div class="container">
+  <section class="login_section">
+    <div class="maindiv">
+      <h2>Login Here</h2>
+      <div class="loginbox">
+        <div class="avtar"></div>
+        <form class="form" action="/login" method="POST">
+          <div class="error_msg">
+            <h6>{{error}}</h6>
+          </div>
+          <div class="fitcontents">
+            <input
+              class="formfield"
+              type="email"
+              id="name"
+              placeholder="Email Id"
+              name="email"
+              required
+            />
+            <div class="imageholder image1"></div>
+          </div>
+          <div class="fitcontents">
+            <input
+              class="formfield"
+              name="password"
+              type="password"
+              id="password"
+              placeholder="Password"
+              required
+            />
+            <div class="imageholder image2"></div>
+          </div>
+
+          <div class="fitcontents">
+            <input class="btn-success" type="submit" value="Login"/>
+          </div>
+          <div>
+            <br />
+            <a href="#" class="text">Forgot Password?</a>
+          </div>
+          <div class="text" style="color: black">Or</div>
+          <div class="icon">
+            <div class="imageholder1 image3"></div>
+            <div class="imageholder1 image4"></div>
+            <div class="imageholder1 image5"></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</div>
+{{>footer}}

@@ -1,0 +1,77 @@
+{{>header}}
+<head>
+  <link rel="stylesheet" href="/css/questions.css">
+</head>
+<section>
+   <div class="main-div">
+        <div class="flex-1 ">
+            <div class="domain-name">
+                <div class="styling">{{title}}</div>
+            </div>
+            <div class="div-2">
+                <div class="ask-question" style="color:white;">Ask Question</div>
+                {{!-- <div class=" click-answer-button" id="one"> --}}
+                    <form action="/questions" method="POST">
+                    <textarea placeholder="Type your question here.." name="question"></textarea>
+                    <button type="submit" class=" btn-success submit-button {{disabled}}" {{disabled}}>Submit</button>
+                    </form>
+                {{!-- </div> --}}
+            </div>
+
+            {{#each questions_arr}}
+
+            <div class="div-2">
+                <div class="ask-question">Question {{index}}</div>
+                {{!-- <div class=" click-answer-button" id="one"> --}}
+                    <div class="question-answer">
+                        {{q_txt}}
+                        <form action="/answers" method="POST">
+                    <button class=" btn-success answer {{disabled}}" type="submit" value={{q_id}} name="q_id" {{disabled}}>Answer</button>
+                    <button class=" btn-success view-answer-button" type="submit" value={{q_id}} name="q_id">View Answers</button>
+                    </form>
+                    </div>
+                    
+                {{!-- </div> --}}
+            </div>
+
+        {{/each}}
+        </div>
+        <div class="flex-2">
+            <div class="viewed">
+                <div class="most-viewed">
+                    <div class="styling">Inquisitive Rankers</div>
+                </div>
+                {{#each most_questions_asked}}
+                <div class="tab">
+                    <div class="rankers">{{index}}. {{username}}</div>
+                    {{!-- <div class="answerers"></div> --}}
+                </div>
+                {{/each}}
+                {{!-- <div class="tab"></div>
+                <div class="tab"></div>
+                <div class="tab"></div> --}}
+                <br>
+                <br>
+                <br>
+            </div>
+            <div class="viewed">
+                <div class="most-viewed">
+                    <div class="styling">Solutionists</div>
+                </div>
+                {{#each most_answers_given}}
+                <div class="tab">
+                    <div class="rankers">{{index}}. {{username}}</div>
+                    {{!-- <div class="rankers"></div> --}}
+                </div>
+                {{/each}}
+                {{!-- <div class="tab"></div>
+                <div class="tab"></div>
+                <div class="tab"></div>
+                <div class="tab"></div> --}}
+                <br>
+                <br>
+                <br>
+            </div>
+            </div>            
+</section>  
+    {{!-- {{>footer}} --}}

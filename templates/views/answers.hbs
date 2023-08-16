@@ -1,0 +1,63 @@
+{{>header}}
+<head>
+  <link rel="stylesheet" href="/css/answers.css">
+</head>
+<section>
+  <div class="main-div">
+        <div class="div-1">
+            <div class="question">
+                <div class="question-icon"> </div>
+                <div class="align-question">{{q_txt}}?</div>
+            </div>
+            <div class="answer-row">
+                <div class="no-of-answers">{{no_of_answers}} Answers</div>
+
+                <div class=" btn-success answer-button" id="button">Answer <div class="select-icon"><img
+                            src="/images/array.svg" height="100%" width="100%" id="img"></div>
+                </div>
+            </div>
+        </div>
+        <div class="div-2" id="invisible">
+            <div class=" click-answer-button" id="one">
+                <form action="/answer_qn" method="POST">
+                    <textarea name="answer" placeholder="Type your answer here.."></textarea>
+                    <button type="submit" class=" btn-success answer-button-2 {{disabled}}" {{disabled}}>Answer</button>
+                </form>
+            </div>
+
+        </div>
+
+        {{#each answers_list}}
+
+        <div class="answer">
+            <div class="person">
+                <div class="icon"></div>
+                <div class="name">
+                    {{author}}
+                </div>
+                <div class="description">
+                    Student at PICT,Pune
+                </div>
+            </div>
+           <p> 
+               {{ans_txt}}
+           </p>
+            <div class="comments">
+                <div class="no-of-comments">
+                    <h4>5 comments</h4>
+                </div>
+                <div class="btn-success answer-button">Comment
+                  <div class="select-icon">
+                    <img src="/images\array.svg" height="100%" width="100%" id="img">
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        {{/each}}
+
+        <script src="/js/answer.js"></script>
+
+    </div>
+</section>
+{{!-- {{>footer}} --}}

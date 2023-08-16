@@ -1,0 +1,22 @@
+.text {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  color: #d1f7ff;
+  margin-top: 5px;
+}
+
+.footers {
+  display: flex;
+  height: 70px;
+  /* margin-top:50px; */
+  position: relative;
+  width: 100%;
+  background: #272b3b;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* padding-top: 30px; */
+  left: 0;
+}

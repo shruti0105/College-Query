@@ -1,0 +1,136 @@
+.body {
+  position: relative;
+  height: 100vh;
+  background-color: #15171e;
+}
+.contain {
+  position: absolute;
+  /* top:56px; */
+  width: 100%;
+  background-color: #15171e;
+}
+.styll {
+  height: 200px;
+  width: 200px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 37px;
+  margin-right: 37px;
+  /* border:1px solid black; */
+  width: 200px;
+  height: 200px;
+  /* background-color: white; */
+  /* border-radius: 5; */
+  /* background-color: aqua; */
+  /* border-radius: 50%; */
+}
+
+.titll {
+  background-color: #0b0c10;
+  color: rgb(135, 221, 224);
+  text-align: center;
+  font-size: 30px;
+}
+.tit {
+  color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 100%;
+  /* height: 100%; */
+  /* background-color: #4865db; */
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.cardstyl {
+  /* background-color: aqua; */
+  border: 1px solid black;
+  box-shadow: 3px 3px #000000;
+  margin: 30px;
+  border-radius: 12px;
+  background-color: #272b3b;
+}
+.obox {
+  display: flex;
+  justify-content: center;
+}
+.cont {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0b0c10;
+}
+.btn-success {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  margin-bottom: 20px;
+  height: fit-content;
+  margin-top: 10px;
+  border-radius: 20px;
+  color: black;
+  background-color: #40a02c;
+  box-shadow: 2px 2px #000000;
+}
+.btn-success:hover {
+  background: color #2bb827 !important;
+  color: black !important;
+  cursor: pointer;
+}
+.btn-success:focus {
+  background-color: #2bb827 !important;
+  color: black !important;
+}
+.mg {
+  margin-top: 50px;
+}
+
+.text {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  color: #d1f7ff;
+  margin-top: 5px;
+}
+
+.footers {
+  display: flex;
+  height: 70px;
+  /* margin-top:50px; */
+  position: absolute;
+  width: 100%;
+  background: #272b3b;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (max-width: 1200px) {
+  .box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .styling {
+    margin-bottom: 46px;
+    margin-top: 46px;
+  }
+}
+@media (max-width: 700px) {
+  .box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .obox {
+    flex-direction: column;
+    align-items: center;
+  }
+}
